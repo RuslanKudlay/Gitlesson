@@ -20,6 +20,10 @@ app.post('/', async(req, res) => {
     
 });
 
+app.get('/', async(req, res) => {
+    res.status(200).json('SERVER WORKING!');
+});
+
 
 async function StartApp(){
     try {
