@@ -1,7 +1,6 @@
 import express  from "express";
 import mongoose from "mongoose";
 import Model from "./Model.js";
-import port from './config.js';
 
 const app = express();
 const PORT = 3000;
