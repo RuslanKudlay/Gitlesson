@@ -1,6 +1,7 @@
 import express  from "express";
 import mongoose from "mongoose";
 import Model from "./Model.js";
+import port from './config.js';
 
 const app = express();
 const PORT = 3000;
@@ -21,7 +22,7 @@ app.post('/', async(req, res) => {
 });
 
 app.get('/', async(req, res) => {
-    res.status(200).json('SERVER WORKING!');
+    res.status(200).send(<h1>Server Working!</h1>);
 });
 
 
