@@ -22,7 +22,7 @@ app.post('/', async(req, res) => {
 });
 
 app.get('/', async(req, res) => {
-    res.status(200).send(<h1>Server Working!</h1>);
+    res.status(200).send("<h1>Server Working!</h1>");
 });
 
 
